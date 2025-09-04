@@ -48,6 +48,18 @@ jobs:
             echo "Using npm install (no lockfile found)"
             npm install
           fi
+      
+      - name: Ensure Astro is installed (safety net)
+        working-directory: ${{ steps.vars.outputs.dir }}
+        shell: bash
+        run: |
+          if ! npx --no-install astro --version >/dev/null 2>&1; then
+            echo "Astro not found, installing locally..."
+            npm i -D astro@^4
+          else
+            echo "Astro is present."
+          fi
+
 
       - name: Build
         working-directory: ${{ steps.vars.outputs.dir }}

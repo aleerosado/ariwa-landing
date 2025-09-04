@@ -1,4 +1,4 @@
-name: Deploy Astro to GitHub Pages
+name: Deploy Astro to GitHub Pages (no-lockfile-safe)
 
 on:
   push:
@@ -21,26 +21,46 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      # Detecta dónde está el package.json (raíz o subcarpeta)
+      - name: Detect project directory
+        id: vars
+        shell: bash
+        run: |
+          set -e
+          DIR=$(dirname "$(git ls-files | grep -m1 '^.*package\.json$' || true)")
+          if [ -z "$DIR" ] || [ "$DIR" = "." ]; then DIR="."; fi
+          echo "dir=$DIR" >> "$GITHUB_OUTPUT"
+          echo "Project dir: $DIR"
+
+      - name: Setup Node (no cache to avoid lockfile error)
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
 
-      - name: Install deps
-        run: npm install
+      - name: Install dependencies (smart)
+        working-directory: ${{ steps.vars.outputs.dir }}
+        shell: bash
+        run: |
+          if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
+            echo "Using npm ci (lockfile found)"
+            npm ci
+          else
+            echo "Using npm install (no lockfile found)"
+            npm install
+          fi
 
       - name: Build
+        working-directory: ${{ steps.vars.outputs.dir }}
         run: npm run build
 
-      # Evita que GitHub Pages intente usar Jekyll
       - name: Disable Jekyll
+        working-directory: ${{ steps.vars.outputs.dir }}
         run: touch dist/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: ${{ steps.vars.outputs.dir }}/dist
 
   deploy:
     needs: build

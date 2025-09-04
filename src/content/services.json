@@ -1,0 +1,5 @@
+[
+  { "title":"Fábrica de software", "bullets":["MVPs rápidos","Arquitectura cloud","QA & observabilidad"] },
+  { "title":"IA aplicada", "bullets":["Chatbots & RAG","Vision AI","Automatización con agentes"] },
+  { "title":"Data & Analytics", "bullets":["Pipelines","Dashboards","ML Ops"] }
+]

@@ -1,0 +1,8 @@
+:root{
+  --ariwa-red:#E53B3B;
+  --ariwa-blue:#10223A;
+  --bg:#0A0F18;
+  --text:#FFFFFF;
+  --muted:#C8D3E0;
+}
+html,body{ background:var(--bg); color:var(--text); }

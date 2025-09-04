@@ -1,0 +1,17 @@
+---
+const { title = "Ariwa Labs — Software, Data e IA", description = "Fábrica de software con IA, data y cloud." } = Astro.props;
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body class="min-h-dvh bg-ariwa-bg text-ariwa-ink font-[Inter]">
+    <slot />
+  </body>
+</html>

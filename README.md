@@ -1,93 +1,76 @@
-# Free React / Next.js landing page template
+# Ariwa Labs Landing
 
-![Open React / Next.js template preview](https://github.com/user-attachments/assets/522a5e46-2a0e-48ca-80eb-87c7fa58f3ea)
+Landing page for **Ariwa Labs**, built on top of Next.js 15, React 19 and Tailwind CSS v4. The UI started from Cruip's Open template and was completely re‑themed with Ariwa's palette (Indigo/Blue gradients, Ariwa Red accents and warm cream surfaces), responsive section layouts and localized content.
 
-**Open** is a **free React / Next.js landing page template built with Tailwind CSS** for developers/makers who want to create a quick and professional landing page for their open source projects, SaaS products, online services, and more.
+![Ariwa Labs hero screenshot](https://github.com/user-attachments/assets/522a5e46-2a0e-48ca-80eb-87c7fa58f3ea)
 
-**UPDATE 2025-02-04** Added Tailwind v4 support!
+## Tech Stack
 
-Use it for whatever you want, and be sure to reach us out on [Twitter](https://twitter.com/Cruip_com) if you build anything cool/useful with it.
+- **Next.js 15** (App Router, React Server Components)
+- **React 19**
+- **Tailwind CSS v4** (single `app/css/style.css` entry with custom palette & plugins)
+- **Headless UI** (modal video)
+- **TypeScript**
 
-Created and maintained with ❤️ by [Cruip.com](https://cruip.com).
+## Project Structure
 
-_Version 1.0.0 built with the Cruip CSS is available [here](https://github.com/cruip/open-react-template/releases/tag/1.0.0)._
-_Version 2.0.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/cruip/open-react-template/releases/tag/2.0.3)._
-_Version 3.3.0 (before redesign) built with Tailwind CSS and Next.js is available [here](https://github.com/cruip/open-react-template/releases/tag/3.3.0)._
-
-## Live demo
-
-Check the live demo here 👉️ [https://open.cruip.com/](https://open.cruip.com/)
-
-## Open PRO
-
-[![Open Pro](https://github.com/user-attachments/assets/2062c728-95f1-4d59-aa2d-d63556f625d5)](https://cruip.com/)
-
-## Design files
-
-If you need the design files, you can download them from Figma's Community 👉 https://bit.ly/401KSUS
-
-## Usage
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-### Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-pnpm dev (recommended)
-# or
-yarn dev
+```
+app/
+ ├─ (default)/layout.tsx, page.tsx   # marketing shell and sections
+ ├─ (auth)/...                       # sign in / sign up / reset password flows
+ ├─ api/hello                        # example API route
+ └─ css/style.css                    # Tailwind + tokens for the whole site
+components/
+ ├─ hero-home.tsx, workflows.tsx, features.tsx, testimonials.tsx, cta.tsx
+ └─ ui/{header,footer,logo}.tsx
+public/                              # fonts, images, video assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Install dependencies (npm, pnpm or yarn) and start the dev server:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm install
+npm run dev
+# or pnpm dev / yarn dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Open `http://localhost:3000` in your browser. Files in `app/` use fast refresh, so edits are reflected automatically.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Useful Scripts
 
-### Learn More
+| Command        | Description                              |
+| -------------- | ---------------------------------------- |
+| `npm run dev`  | Start the development server             |
+| `npm run build`| Production build                         |
+| `npm run start`| Run the built app                        |
+| `npm run lint` | (Upcoming) ESLint migration placeholder  |
 
-To learn more about Next.js, take a look at the following resources:
+> **Note:** Next.js 15 deprecates `next lint`. When migrating to ESLint CLI follow [the codemod instructions](https://nextjs.org/docs/app/building-your-application/configuring/eslint#using-eslint-config) if you need linting.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Most brand values (colors, typography, utilities) live in `app/css/style.css`. Update the palette tokens (e.g. `--color-brand-primary`, `--color-brand-accent`) once and reuse them via Tailwind utility classes like `text-brand-primary` or `bg-surface-alt`.
 
-### Deploy on Vercel
+Sections are modular:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Hero** (`components/hero-home.tsx`) – hero copy, CTAs and modal video (update assets in `public/images/hero-image-01.jpg` and `public/videos/video.mp4`).
+- **Workflows / Features / Testimonials / CTA** (`components/*.tsx`) – data objects or JSX blocks you can localize or extend.
+- **Authentication views** (`app/(auth)/*`) – standalone pages reusing the same layout and tokens.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Deployment
 
-### Support notes
+Deploy to Vercel (recommended) or any Next.js-compatible platform:
 
-This template has been developed with the App Router (`app`) and React Server Components. If you’re unfamiliar with these beta features, you can find more information about them on the Next.js beta documentation page. So, please note that any request dealing with React (e.g. extra features, customisations, et cetera) is to be considered out of the support scope.
+1. `npm run build`
+2. Upload the `.next` output or connect the repo to Vercel for automatic builds.
 
-For more information about what support covers, please see our (FAQs)[https://cruip.com/faq/].
+See the [Next.js deployment docs](https://nextjs.org/docs/deployment) for platform-specific steps.
 
-## Credits
+## Credits & License
 
-- [Nucleo](https://nucleoapp.com/)
+- Based on **Open** by [Cruip](https://cruip.com/) – GPL license.
+- Additional assets: [Nucleo](https://nucleoapp.com/), Unsplash placeholders.
 
-## Terms and License
-
-- Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
-- Copyright 2024 [Cruip](https://cruip.com/).
-- Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
-- Attribution is not required, although it is really appreciated.
-
-## About Us
-
-We're an Italian developer/designer duo creating high-quality design/code resources for developers, makers, and startups.
-
-## Stay in the loop
-
-If you would like to know when we release new resources, you can follow [@pacovitiello](https://x.com/pacovitiello) and [@DavidePacilio](https://x.com/DavidePacilio) on X, or you can subscribe to our [newsletter](https://cruip.com/newsletter/).
+Released under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html). Use it for personal and commercial projects; please don’t resell or redistribute the original template as-is.

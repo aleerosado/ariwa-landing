@@ -29,7 +29,7 @@ export default function ModalVideo({
   const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
-    <div className="relative">
+    <div className="relative flex justify-center">
       {/* Secondary illustration */}
       <div
         className="pointer-events-none absolute bottom-8 left-1/2 -z-10 -ml-28 -translate-x-1/2 translate-y-1/2"
@@ -46,7 +46,7 @@ export default function ModalVideo({
 
       {/* Video thumbnail */}
       <button
-        className="group relative flex items-center justify-center rounded-2xl focus:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-200"
+        className="group relative flex items-center justify-center rounded-2xl focus:outline-hidden focus-visible:ring-3 focus-visible:ring-rose-200"
         onClick={() => {
           setModalOpen(true);
         }}
@@ -54,7 +54,7 @@ export default function ModalVideo({
         data-aos="fade-up"
         data-aos-delay={200}
       >
-        <figure className="relative overflow-hidden rounded-2xl before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500/20 before:to-gray-900">
+        <figure className="relative overflow-hidden rounded-2xl before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-[#0A1A2F] before:via-rose-500/25 before:to-[#1A2E42]">
           <Image
             className="opacity-50 grayscale"
             src={thumb}
@@ -88,8 +88,8 @@ export default function ModalVideo({
                   y2={20}
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#6366F1" />
-                  <stop offset={1} stopColor="#6366F1" stopOpacity=".72" />
+                  <stop stopColor="#F5EFE6" />
+                  <stop offset={1} stopColor="#F5EFE6" stopOpacity=".72" />
                 </linearGradient>
               </defs>
             </svg>
@@ -110,9 +110,9 @@ export default function ModalVideo({
       >
         <DialogBackdrop
           transition
-          className="fixed inset-0 z-99999 bg-black/70 transition-opacity duration-300 ease-out data-closed:opacity-0"
+          className="fixed inset-0 z-[99999] bg-black/70 transition-opacity duration-300 ease-out data-closed:opacity-0"
         />
-        <div className="fixed inset-0 z-99999 flex px-4 py-6 sm:px-6">
+        <div className="fixed inset-0 z-[99999] flex px-4 py-6 sm:px-6">
           <div className="mx-auto flex h-full max-w-6xl items-center">
             <DialogPanel
               transition

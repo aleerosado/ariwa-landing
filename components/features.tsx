@@ -5,7 +5,7 @@ import FeaturesImage from "@/public/images/features.png";
 
 export default function Features() {
   return (
-    <section className="relative">
+    <section className="relative bg-brand-primary text-gray-50">
       <div
         className="pointer-events-none absolute left-1/2 top-0 -z-10 -mt-20 -translate-x-1/2"
         aria-hidden="true"
@@ -30,26 +30,26 @@ export default function Features() {
           alt="Blurred shape"
         />
       </div>
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
+        <div className="rounded-3xl border border-white/10 bg-white/5 px-4 py-12 shadow-[0_24px_60px_-25px_rgba(5,14,26,.65)] backdrop-blur-sm sm:px-8 md:px-12 md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-4 text-center md:pb-12">
-            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-indigo-200/50">
-              <span className="inline-flex bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                Advanced Controls
+            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-rose-500/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-rose-500/50">
+              <span className="inline-flex bg-linear-to-r from-rose-500 to-rose-400 bg-clip-text text-transparent">
+                Capacidades claves
               </span>
             </div>
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="pb-4 font-nacelle text-3xl font-semibold text-gray-50 text-balance md:text-4xl">
               Diseñado para equipos que construyen el futuro con tecnología
             </h2>
-            <p className="text-lg text-indigo-200/65">
+            <p className="text-lg text-gray-200 text-balance">
               En Ariwa Labs combinamos inteligencia artificial, software y visión estratégica para acelerar ideas 
               y proyectos que transforman industrias. Desde startups hasta grandes organizaciones, te ayudamos a escalar con eficiencia, innovación y propósito.
             </p>
           </div>
           <div className="flex justify-center pb-4 md:pb-12" data-aos="fade-up">
             <Image
-              className="max-w-none"
+              className="w-full max-w-full"
               src={FeaturesImage}
               width={1104}
               height={384}
@@ -57,10 +57,10 @@ export default function Features() {
             />
           </div>
           {/* Items */}
-          <div className="mx-auto grid max-w-sm gap-12 sm:max-w-none sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
+          <div className="grid w-full gap-12 sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-rose-400"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -71,17 +71,17 @@ export default function Features() {
                   d="m16.295 5.393 7.528 2.034-4.436 16.412L5.87 20.185l.522-1.93 11.585 3.132 3.392-12.55-5.597-1.514.522-1.93Z"
                 />
               </svg>
-              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
+              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-50">
                 IA Aplicada
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-gray-200">
                 Desarrollamos agentes inteligentes y modelos a medida para potenciar procesos, 
                 automatizar tareas y mejorar la experiencia de usuarios en sectores como salud, educación, retail o legal.
               </p>
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-rose-400"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -89,17 +89,17 @@ export default function Features() {
                 <path fillOpacity=".48" d="M7 8V0H5v8h2Zm12 16v-4h-2v4h2Z" />
                 <path d="M19 6H0v2h17v8H7v-6H5v8h19v-2h-5V6Z" />
               </svg>
-              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
+              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-50">
                 Consultoría & Arquitectura
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-gray-200">
                 Acompañamos a startups y empresas a implementar soluciones tecnológicas con foco en escalabilidad, seguridad y eficiencia. 
                 Desde la nube hasta la integración de sistemas.
               </p>
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-rose-400"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -110,17 +110,17 @@ export default function Features() {
                   d="M13.01 12.508a2.5 2.5 0 0 0-3.502.482L1.797 23.16.203 21.952l7.71-10.17a4.5 4.5 0 1 1 7.172 5.437l-4.84 6.386-1.594-1.209 4.841-6.385a2.5 2.5 0 0 0-.482-3.503Z"
                 />
               </svg>
-              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
+              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-50">
                 Desarrollo & Soporte
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-gray-200">
                 Creamos plataformas digitales robustas y brindamos soporte continuo. Nos adaptamos
                 a tus flujos con metodologías ágiles y visión de largo plazo.
               </p>
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-rose-400"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -136,16 +136,16 @@ export default function Features() {
                 />
                 <path d="m16.321 2-.5-.866 1.733-1 .5.866A22 22 0 0 1 21 12c0 3.852-1.017 7.636-2.948 10.97l-.502.865-1.73-1.003.501-.865A19.878 19.878 0 0 0 19 12a20 20 0 0 0-2.679-10Z" />
               </svg>
-              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
+              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-50">
                 Formación & Cursos
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-gray-200">
                 Enseñamos lo que hacemos: IA, desarrollo, DevOps, nube, analítica y más. Para empresas, universidades o talentos que quieren estar a la vanguardia.
               </p>
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-rose-400"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -156,16 +156,16 @@ export default function Features() {
                 />
                 <path d="m7.454 2.891.891-.454L7.437.655l-.891.454a12 12 0 0 0 0 21.382l.89.454.91-1.781-.892-.455a10 10 0 0 1 0-17.818ZM17.456 1.11l-.891-.454-.909 1.782.891.454a10 10 0 0 1 0 17.819l-.89.454.908 1.781.89-.454a12 12 0 0 0 0-21.382Z" />
               </svg>
-              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
+              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-50">
                 IA para el futuro
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-gray-200">
                 Exploramos soluciones de inteligencia artificial para sectores clave como medicina, agricultura y medio ambiente. Tecnología desde Perú para resolver desafíos globales.
               </p>
             </article>
             <article>
               <svg
-                className="mb-3 fill-indigo-500"
+                className="mb-3 fill-rose-400"
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
                 height={24}
@@ -176,10 +176,10 @@ export default function Features() {
                 />
                 <path d="M19.406 3.844 6.083 20.497.586 15 2 13.586l3.917 3.917L17.844 2.595l1.562 1.25Z" />
               </svg>
-              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
+              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-50">
                 Integraciones & Flujos
               </h3>
-              <p className="text-indigo-200/65">
+              <p className="text-gray-200">
                 Diseñamos herramientas que se integran con tu stack actual: APIs, automatizaciones, dashboards, analítica y más. Tecnología que se adapta a ti.
               </p>
             </article>

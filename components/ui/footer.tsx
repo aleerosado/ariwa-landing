@@ -4,7 +4,7 @@ import FooterIllustration from "@/public/images/footer-illustration.svg";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="relative bg-[#152535] text-gray-100">
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         {/* Footer illustration */}
         <div
@@ -19,14 +19,14 @@ export default function Footer() {
             alt="Footer illustration"
           />
         </div>
-        <div className="grid grid-cols-2 justify-between gap-12 py-8 sm:grid-rows-[auto_auto] md:grid-cols-4 md:grid-rows-[auto_auto] md:py-12 lg:grid-cols-[repeat(4,minmax(0,140px))_1fr] lg:grid-rows-1 xl:gap-20">
+        <div className="grid grid-cols-2 justify-between gap-12 py-12 sm:grid-rows-[auto_auto] md:grid-cols-4 md:grid-rows-[auto_auto] lg:grid-cols-[repeat(4,minmax(0,140px))_1fr] lg:grid-rows-1 xl:gap-20">
           {/* 1st block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Product</h3>
+            <h3 className="text-sm font-medium text-gray-50">Product</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Features
@@ -34,7 +34,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Integrations
@@ -42,7 +42,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Pricing &amp; Plans
@@ -50,7 +50,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Changelog
@@ -58,7 +58,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Our method
@@ -66,7 +66,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   User policy
@@ -76,11 +76,11 @@ export default function Footer() {
           </div>
           {/* 2nd block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Company</h3>
+            <h3 className="text-sm font-medium text-gray-50">Company</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   About us
@@ -88,7 +88,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Diversity &amp; Inclusion
@@ -96,7 +96,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Blog
@@ -104,7 +104,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Careers
@@ -112,7 +112,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Financial statements
@@ -122,11 +122,11 @@ export default function Footer() {
           </div>
           {/* 3rd block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Resources</h3>
+            <h3 className="text-sm font-medium text-gray-50">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Community
@@ -134,7 +134,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Terms of service
@@ -142,7 +142,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Report a vulnerability
@@ -152,13 +152,13 @@ export default function Footer() {
           </div>
           {/* 4th block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">
+            <h3 className="text-sm font-medium text-gray-50">
               Content Library
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Templates
@@ -166,7 +166,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Tutorials
@@ -174,7 +174,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Knowledge base
@@ -182,7 +182,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Learn
@@ -190,7 +190,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Cookie manager
@@ -203,12 +203,12 @@ export default function Footer() {
             <div className="mb-3">
               <Logo />
             </div>
-            <div className="text-sm">
-              <p className="mb-3 text-indigo-200/65">
+            <div className="text-sm text-gray-300">
+              <p className="mb-3">
                 © Cruip.com
-                <span className="text-gray-700"> · </span>
+                <span className="text-gray-500"> · </span>
                 <a
-                  className="text-indigo-200/65 transition hover:text-indigo-500"
+                  className="text-gray-300 transition hover:text-brand-accent"
                   href="#0"
                 >
                   Terms
@@ -217,7 +217,7 @@ export default function Footer() {
               <ul className="inline-flex gap-1">
                 <li>
                   <a
-                    className="flex items-center justify-center text-indigo-500 transition hover:text-indigo-400"
+                    className="flex items-center justify-center text-brand-accent transition hover:text-rose-400"
                     href="#0"
                     aria-label="Twitter"
                   >
@@ -232,7 +232,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    className="flex items-center justify-center text-indigo-500 transition hover:text-indigo-400"
+                    className="flex items-center justify-center text-brand-accent transition hover:text-rose-400"
                     href="#0"
                     aria-label="Medium"
                   >
@@ -247,7 +247,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    className="flex items-center justify-center text-indigo-500 transition hover:text-indigo-400"
+                    className="flex items-center justify-center text-brand-accent transition hover:text-rose-400"
                     href="#0"
                     aria-label="Github"
                   >

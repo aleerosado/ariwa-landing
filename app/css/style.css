@@ -12,6 +12,37 @@
   --font-inter: var(--font-inter), sans-serif;
   --font-nacelle: var(--font-nacelle), sans-serif;
 
+  --color-brand-primary: #0a1a2f;
+  --color-brand-accent: #d72638;
+  --color-surface-alt: #f5efe6;
+
+  --color-gray-50: #f9f9f9;
+  --color-gray-100: #f5efe6;
+  --color-gray-200: #ebe3d8;
+  --color-gray-300: #ddd3c6;
+  --color-gray-400: #cdbfae;
+  --color-gray-500: #b2a690;
+  --color-gray-600: #324a5f;
+  --color-gray-700: #223547;
+  --color-gray-800: #152535;
+  --color-gray-900: #0a1a2f;
+  --color-gray-950: #050e1a;
+
+  --color-indigo-50: #eef3f8;
+  --color-indigo-100: #d7e0ed;
+  --color-indigo-200: #b4c5dd;
+  --color-indigo-300: #90aacd;
+  --color-indigo-400: #6789b2;
+  --color-indigo-500: #496d94;
+  --color-indigo-600: #324a5f;
+  --color-indigo-700: #223547;
+  --color-indigo-800: #182738;
+  --color-indigo-900: #0f1c2a;
+
+  --color-rose-400: #e03b49;
+  --color-rose-500: #d72638;
+  --color-rose-600: #b81f2f;
+
   --text-xs: 0.8125rem;
   --text-xs--line-height: 1.5384;
   --text-sm: 0.875rem;
@@ -89,5 +120,32 @@
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@layer utilities {
+  .text-brand-primary {
+    color: var(--color-brand-primary);
+  }
+
+  .text-brand-accent {
+    color: var(--color-brand-accent);
+  }
+
+  .bg-brand-primary {
+    background-color: var(--color-brand-primary);
+  }
+
+  .bg-surface-alt {
+    background-color: var(--color-surface-alt);
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }

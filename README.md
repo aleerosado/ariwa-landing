@@ -1,6 +1,6 @@
 # Ariwa Labs Landing
 
-Landing page for **Ariwa Labs**, built on top of Next.js 15, React 19 and Tailwind CSS v4. The UI started from Cruip's Open template and was completely re‑themed with Ariwa's palette (Indigo/Blue gradients, Ariwa Red accents and warm cream surfaces), responsive section layouts and localized content.
+Landing page for **Ariwa Labs**, built on top of Next.js 15, React 19 and Tailwind CSS v4. The UI started from Cruip's Open template and was completely re‑themed as a modern AI consulting landing with dark gradients, modular sections, and conversion-focused CTAs.
 
 ![Ariwa Labs hero screenshot](https://github.com/user-attachments/assets/522a5e46-2a0e-48ca-80eb-87c7fa58f3ea)
 
@@ -16,13 +16,18 @@ Landing page for **Ariwa Labs**, built on top of Next.js 15, React 19 and Tailwi
 
 ```
 app/
- ├─ (default)/layout.tsx, page.tsx   # marketing shell and sections
- ├─ (auth)/...                       # sign in / sign up / reset password flows
+ ├─ page.tsx                         # home route (marketing shell + sections)
+ ├─ signin/page.tsx                  # sign in view
+ ├─ signup/page.tsx                  # sign up view
+ ├─ reset-password/page.tsx          # password reset view
  ├─ api/hello                        # example API route
  └─ css/style.css                    # Tailwind + tokens for the whole site
 components/
- ├─ hero-home.tsx, workflows.tsx, features.tsx, testimonials.tsx, cta.tsx
- └─ ui/{header,footer,logo}.tsx
+ ├─ animated-reveal.tsx, hover-card.tsx, section-heading.tsx
+ └─ ... (shared UI primitives)
+layout/                              # landing layout, sticky navbar, footer, auth shell
+sections/                            # modular landing sections
+styles/landing.css                   # extra visual layer utilities
 public/                              # fonts, images, video assets
 ```
 
@@ -53,11 +58,7 @@ Open `http://localhost:3000` in your browser. Files in `app/` use fast refresh, 
 
 Most brand values (colors, typography, utilities) live in `app/css/style.css`. Update the palette tokens (e.g. `--color-brand-primary`, `--color-brand-accent`) once and reuse them via Tailwind utility classes like `text-brand-primary` or `bg-surface-alt`.
 
-Sections are modular:
-
-- **Hero** (`components/hero-home.tsx`) – hero copy, CTAs and modal video (update assets in `public/images/hero-image-01.jpg` and `public/videos/video.mp4`).
-- **Workflows / Features / Testimonials / CTA** (`components/*.tsx`) – data objects or JSX blocks you can localize or extend.
-- **Authentication views** (`app/(auth)/*`) – standalone pages reusing the same layout and tokens.
+Sections are modular under `sections/*`, and shared structure is handled in `layout/*` and `components/*`.
 
 ## Deployment
 

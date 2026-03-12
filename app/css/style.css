@@ -1,8 +1,9 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 /* Additional styles */
-@import './additional-styles/utility-patterns.css' layer(components);
-@import './additional-styles/theme.css';
+@import "./additional-styles/utility-patterns.css" layer(components);
+@import "./additional-styles/theme.css";
+@import "../../styles/landing.css";
 
 @plugin "@tailwindcss/forms" {
   strategy: base;
@@ -10,38 +11,39 @@
 
 @theme {
   --font-inter: var(--font-inter), sans-serif;
+  --font-plus-jakarta: var(--font-plus-jakarta), sans-serif;
   --font-nacelle: var(--font-nacelle), sans-serif;
 
-  --color-brand-primary: #0a1a2f;
-  --color-brand-accent: #d72638;
-  --color-surface-alt: #f5efe6;
+  --color-brand-primary: #2563eb;
+  --color-brand-accent: #22c55e;
+  --color-surface-alt: #0b0f19;
 
-  --color-gray-50: #f9f9f9;
-  --color-gray-100: #f5efe6;
-  --color-gray-200: #ebe3d8;
-  --color-gray-300: #ddd3c6;
-  --color-gray-400: #cdbfae;
-  --color-gray-500: #b2a690;
-  --color-gray-600: #324a5f;
-  --color-gray-700: #223547;
-  --color-gray-800: #152535;
-  --color-gray-900: #0a1a2f;
-  --color-gray-950: #050e1a;
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+  --color-gray-950: #020617;
 
-  --color-indigo-50: #eef3f8;
-  --color-indigo-100: #d7e0ed;
-  --color-indigo-200: #b4c5dd;
-  --color-indigo-300: #90aacd;
-  --color-indigo-400: #6789b2;
-  --color-indigo-500: #496d94;
-  --color-indigo-600: #324a5f;
-  --color-indigo-700: #223547;
-  --color-indigo-800: #182738;
-  --color-indigo-900: #0f1c2a;
+  --color-indigo-50: #eff6ff;
+  --color-indigo-100: #dbeafe;
+  --color-indigo-200: #bfdbfe;
+  --color-indigo-300: #93c5fd;
+  --color-indigo-400: #60a5fa;
+  --color-indigo-500: #3b82f6;
+  --color-indigo-600: #2563eb;
+  --color-indigo-700: #1d4ed8;
+  --color-indigo-800: #1e40af;
+  --color-indigo-900: #1e3a8a;
 
-  --color-rose-400: #e03b49;
-  --color-rose-500: #d72638;
-  --color-rose-600: #b81f2f;
+  --color-rose-400: #fb7185;
+  --color-rose-500: #f43f5e;
+  --color-rose-600: #e11d48;
 
   --text-xs: 0.8125rem;
   --text-xs--line-height: 1.5384;
@@ -98,6 +100,7 @@
       opacity: 0;
     }
   }
+
   @keyframes gradient {
     to {
       background-position: 200% center;
@@ -105,15 +108,17 @@
   }
 }
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    background: #0b0f19;
+  }
+
+  body {
+    background: #0b0f19;
+    color: #f8fafc;
+  }
+
   *,
   ::after,
   ::before,
@@ -124,6 +129,10 @@
 }
 
 @layer utilities {
+  .font-plus-jakarta {
+    font-family: var(--font-plus-jakarta);
+  }
+
   .text-brand-primary {
     color: var(--color-brand-primary);
   }

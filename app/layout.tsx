@@ -1,13 +1,17 @@
 import "./css/style.css";
 
-import { Inter } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import localFont from "next/font/local";
-
-import Header from "@/components/ui/header";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-plus-jakarta",
   display: "swap",
 });
 
@@ -39,9 +43,9 @@ const nacelle = localFont({
 });
 
 export const metadata = {
-  title: "Ariwa Labs | Innovación con identidad",
+  title: "Ariwa Labs | AI Engineering & Technology Consulting",
   description:
-    "Ariwa Labs combina tecnología, inteligencia artificial e identidad cultural para crear soluciones digitales con impacto real.",
+    "Ariwa Labs is a technology consulting startup focused on artificial intelligence, cloud architecture and software engineering.",
 };
 
 export default function RootLayout({
@@ -52,10 +56,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${nacelle.variable} bg-surface-alt font-inter text-base text-gray-900 antialiased`}
+        className={`${inter.variable} ${plusJakartaSans.variable} ${nacelle.variable} bg-[#0B0F19] font-plus-jakarta text-base text-[#F8FAFC] antialiased`}
       >
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
-          <Header />
           {children}
         </div>
       </body>

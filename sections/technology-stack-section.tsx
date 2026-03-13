@@ -16,9 +16,9 @@ export default function TechnologyStackSection() {
   return (
     <SectionShell id="technology">
       <SectionHeading
-        eyebrow="Technology stack"
-        title="Modern platforms we build with"
-        description="Ariwa Labs uses production-grade technologies to deliver secure, resilient and scalable systems."
+        eyebrow="Stack tecnológico"
+        title="Plataformas modernas con las que construimos"
+        description="Ariwa Labs utiliza tecnologías de grado productivo para entregar sistemas seguros, resilientes y escalables."
       />
 
       <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-5 sm:p-8">

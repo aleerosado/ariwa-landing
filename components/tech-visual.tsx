@@ -30,8 +30,8 @@ export default function TechVisual() {
             className="rounded-2xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur-sm"
           >
             <BrainCircuit className="mb-3 h-6 w-6 text-[#22C55E]" />
-            <p className="text-sm font-medium text-[#F8FAFC]">AI Intelligence Layer</p>
-            <p className="mt-2 text-xs text-[#94A3B8]">Models, copilots and practical automation for enterprise teams.</p>
+            <p className="text-sm font-medium text-[#F8FAFC]">Capa de inteligencia IA</p>
+            <p className="mt-2 text-xs text-[#94A3B8]">Modelos, copilotos y automatización práctica para equipos empresariales.</p>
           </motion.div>
           <motion.div
             animate={{ y: [0, 6, 0] }}
@@ -39,21 +39,21 @@ export default function TechVisual() {
             className="rounded-2xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur-sm"
           >
             <CloudCog className="mb-3 h-6 w-6 text-[#2563EB]" />
-            <p className="text-sm font-medium text-[#F8FAFC]">Cloud Operations</p>
-            <p className="mt-2 text-xs text-[#94A3B8]">Resilient architectures, observability and scalable delivery pipelines.</p>
+            <p className="text-sm font-medium text-[#F8FAFC]">Operaciones cloud</p>
+            <p className="mt-2 text-xs text-[#94A3B8]">Arquitecturas resilientes, observabilidad y pipelines de entrega escalables.</p>
           </motion.div>
         </div>
 
         <div className="relative mt-4 rounded-2xl border border-[#2563EB]/35 bg-[#0B0F19]/70 p-4 sm:p-5">
           <div className="flex items-center justify-between">
-            <p className="text-sm font-medium text-[#F8FAFC]">Unified Engineering Dashboard</p>
+            <p className="text-sm font-medium text-[#F8FAFC]">Panel unificado de ingeniería</p>
             <Cpu className="h-5 w-5 text-[#22C55E]" />
           </div>
           <div className="mt-4 grid grid-cols-3 gap-2">
             {[
-              { label: "Automation", value: "+68%" },
-              { label: "Delivery Speed", value: "2.7x" },
-              { label: "Data Accuracy", value: "99.9%" },
+              { label: "Automatización", value: "+68%" },
+              { label: "Velocidad de entrega", value: "2.7x" },
+              { label: "Precisión de datos", value: "99.9%" },
             ].map((metric) => (
               <div key={metric.label} className="rounded-xl border border-white/10 bg-white/[0.03] p-3 text-center">
                 <p className="text-lg font-semibold text-[#F8FAFC]">{metric.value}</p>

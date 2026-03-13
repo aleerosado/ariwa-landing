@@ -5,15 +5,15 @@ import SectionShell from "@/components/section-shell";
 export default function AboutSection() {
   return (
     <SectionShell id="about">
-      <SectionHeading eyebrow="About" title="A technology partner with global ambition" />
+      <SectionHeading eyebrow="Nosotros" title="Un socio tecnológico con ambición global" />
 
       <AnimatedReveal>
         <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8 lg:p-10">
           <p className="text-lg leading-relaxed text-[#F8FAFC]">
-            Ariwa Labs is a Peruvian technology startup focused on building impactful digital solutions through artificial intelligence, cloud engineering and modern software development.
+            Ariwa Labs es una startup tecnológica peruana enfocada en construir soluciones digitales de impacto mediante inteligencia artificial, ingeniería cloud y desarrollo moderno de software.
           </p>
           <p className="mt-5 text-base leading-relaxed text-[#94A3B8]">
-            We work as an execution partner for public and private organizations that need to modernize operations, deliver better services and accelerate digital transformation with confidence.
+            Trabajamos como socio de ejecución para organizaciones públicas y privadas que necesitan modernizar operaciones, mejorar servicios y acelerar su transformación digital con confianza.
           </p>
         </div>
       </AnimatedReveal>

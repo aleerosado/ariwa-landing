@@ -5,20 +5,20 @@ import SectionHeading from "@/components/section-heading";
 import SectionShell from "@/components/section-shell";
 
 const industries = [
-  { name: "Government", icon: Building2 },
-  { name: "Healthcare", icon: HeartPulse },
-  { name: "Agriculture", icon: Wheat },
-  { name: "Finance", icon: HandCoins },
-  { name: "Education", icon: GraduationCap },
+  { name: "Gobierno", icon: Building2 },
+  { name: "Salud", icon: HeartPulse },
+  { name: "Agroindustria", icon: Wheat },
+  { name: "Finanzas", icon: HandCoins },
+  { name: "Educación", icon: GraduationCap },
 ];
 
 export default function IndustriesSection() {
   return (
     <SectionShell id="industries">
       <SectionHeading
-        eyebrow="Industries"
-        title="Industries we transform"
-        description="We partner with complex organizations where technology modernization has direct impact on people, services and growth."
+        eyebrow="Industrias"
+        title="Industrias que transformamos"
+        description="Trabajamos con organizaciones complejas donde la modernización tecnológica impacta directamente en personas, servicios y crecimiento."
       />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">

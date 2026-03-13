@@ -12,28 +12,28 @@ import SectionShell from "@/components/section-shell";
 
 const solutions = [
   {
-    title: "AI Solutions",
-    description: "Custom copilots, intelligent assistants and AI workflows designed for real business operations.",
+    title: "Soluciones de IA",
+    description: "Copilotos personalizados, asistentes inteligentes y flujos de IA diseñados para operaciones reales.",
     icon: BrainCircuit,
   },
   {
-    title: "Cloud & DevOps",
-    description: "Reliable cloud architectures and delivery pipelines that accelerate product and platform velocity.",
+    title: "Cloud y DevOps",
+    description: "Arquitecturas cloud confiables y pipelines de entrega que aceleran productos y plataformas.",
     icon: CloudCog,
   },
   {
-    title: "Software Engineering",
-    description: "Scalable digital products, APIs and enterprise applications built with modern engineering standards.",
+    title: "Ingeniería de software",
+    description: "Productos digitales escalables, APIs y aplicaciones empresariales con estándares modernos.",
     icon: Code2,
   },
   {
-    title: "Data & Analytics",
-    description: "Data pipelines, governance and analytics ecosystems that convert information into decisions.",
+    title: "Datos y analítica",
+    description: "Pipelines de datos, gobierno y ecosistemas analíticos que convierten información en decisiones.",
     icon: Database,
   },
   {
-    title: "Technology Consulting",
-    description: "Strategic technology roadmaps aligned with business priorities, outcomes and operational reality.",
+    title: "Consultoría tecnológica",
+    description: "Hojas de ruta tecnológicas alineadas con prioridades de negocio, resultados y realidad operativa.",
     icon: Lightbulb,
   },
 ];
@@ -42,9 +42,9 @@ export default function SolutionsSection() {
   return (
     <SectionShell id="solutions">
       <SectionHeading
-        eyebrow="Solutions"
-        title="Technology capabilities built for high-impact execution"
-        description="From AI adoption to cloud modernization, our teams design and deliver solutions that scale with your organization."
+        eyebrow="Soluciones"
+        title="Capacidades tecnológicas para ejecutar con alto impacto"
+        description="Desde adopción de IA hasta modernización cloud, diseñamos y entregamos soluciones que escalan con tu organización."
       />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

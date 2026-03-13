@@ -6,24 +6,24 @@ import SectionShell from "@/components/section-shell";
 
 const insights = [
   {
-    title: "AI in government",
-    category: "Public innovation",
-    summary: "How agencies can use trustworthy AI to improve citizen services and operational response times.",
+    title: "IA en gobierno",
+    category: "Innovación pública",
+    summary: "Cómo las entidades pueden usar IA confiable para mejorar servicios al ciudadano y tiempos de respuesta.",
   },
   {
-    title: "Digital transformation",
-    category: "Strategy",
-    summary: "A practical operating model for aligning technology programs with measurable business results.",
+    title: "Transformación digital",
+    category: "Estrategia",
+    summary: "Un modelo operativo práctico para alinear programas tecnológicos con resultados de negocio medibles.",
   },
   {
-    title: "Cloud modernization",
-    category: "Cloud engineering",
-    summary: "Patterns to move from legacy infrastructure to resilient cloud-native platforms without disruption.",
+    title: "Modernización cloud",
+    category: "Ingeniería cloud",
+    summary: "Patrones para migrar de infraestructura legada a plataformas cloud-native resilientes sin interrupciones.",
   },
   {
-    title: "Applied artificial intelligence",
-    category: "AI execution",
-    summary: "From proof of concept to production systems: a framework for deploying AI responsibly at scale.",
+    title: "Inteligencia artificial aplicada",
+    category: "Ejecución de IA",
+    summary: "De la prueba de concepto a producción: un marco para desplegar IA responsablemente a escala.",
   },
 ];
 
@@ -31,9 +31,9 @@ export default function InsightsSection() {
   return (
     <SectionShell id="insights">
       <SectionHeading
-        eyebrow="Insights"
-        title="Perspectives from the field"
-        description="A preview of strategic articles and implementation lessons from Ariwa Labs teams."
+        eyebrow="Perspectivas"
+        title="Lecciones desde el terreno"
+        description="Una vista previa de artículos estratégicos y aprendizajes de implementación del equipo de Ariwa Labs."
       />
 
       <div className="grid gap-4 sm:grid-cols-2">
@@ -47,7 +47,7 @@ export default function InsightsSection() {
             <h3 className="mt-3 text-xl font-semibold text-[#F8FAFC]">{insight.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#94A3B8]">{insight.summary}</p>
             <p className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#F8FAFC]">
-              Read insight
+              Leer artículo
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </p>
           </HoverCard>

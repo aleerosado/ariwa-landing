@@ -11,16 +11,16 @@ export default function CallToActionSection() {
           <div className="pointer-events-none absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-[#22C55E]/20 blur-3xl" aria-hidden="true" />
 
           <h2 className="relative text-3xl font-semibold tracking-tight text-[#F8FAFC] sm:text-4xl">
-            Let&apos;s build the future together
+            Construyamos el futuro juntos
           </h2>
           <p className="relative mt-4 max-w-2xl text-base leading-relaxed text-[#BFDBFE]">
-            Start a strategic conversation with Ariwa Labs and discover how AI, cloud and software engineering can create measurable impact for your organization.
+            Inicia una conversación estratégica con Ariwa Labs y descubre cómo la IA, el cloud y la ingeniería de software pueden generar impacto medible en tu organización.
           </p>
 
           <div className="relative mt-7 flex flex-wrap gap-3">
-            <CtaButton href="mailto:contact@ariwalabs.com">Start a project</CtaButton>
+            <CtaButton href="mailto:contact@ariwalabs.com">Iniciar un proyecto</CtaButton>
             <CtaButton href="mailto:partners@ariwalabs.com" variant="secondary">
-              Schedule a consultation
+              Agendar una consultoría
             </CtaButton>
           </div>
         </div>

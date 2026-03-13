@@ -6,27 +6,27 @@ import SectionShell from "@/components/section-shell";
 
 const challenges = [
   {
-    title: "Legacy systems",
+    title: "Sistemas legados",
     description:
-      "Critical processes still depend on outdated platforms that limit agility and increase operational risk.",
+      "Procesos críticos aún dependen de plataformas desactualizadas que limitan la agilidad y aumentan el riesgo operativo.",
     icon: DatabaseZap,
   },
   {
-    title: "Lack of automation",
+    title: "Falta de automatización",
     description:
-      "Teams spend too much time on manual tasks, making execution slower and less reliable.",
+      "Los equipos invierten demasiado tiempo en tareas manuales, haciendo la ejecución más lenta y menos confiable.",
     icon: Workflow,
   },
   {
-    title: "Data underutilization",
+    title: "Subutilización de datos",
     description:
-      "Valuable data is fragmented and cannot consistently support strategic decisions.",
+      "La información valiosa está fragmentada y no logra sostener decisiones estratégicas de forma consistente.",
     icon: Bot,
   },
   {
-    title: "Slow digital transformation",
+    title: "Transformación digital lenta",
     description:
-      "Disconnected initiatives delay impact, reduce adoption and increase transformation costs.",
+      "Las iniciativas desconectadas retrasan el impacto, reducen la adopción y elevan los costos de transformación.",
     icon: Gauge,
   },
 ];
@@ -35,8 +35,8 @@ export default function ProblemSection() {
   return (
     <SectionShell>
       <SectionHeading
-        title="Modern organizations face complex technological challenges"
-        description="Ariwa Labs helps organizations close execution gaps and transform complexity into measurable results."
+        title="Las organizaciones modernas enfrentan desafíos tecnológicos complejos"
+        description="Ariwa Labs ayuda a cerrar brechas de ejecución y convertir la complejidad en resultados medibles."
       />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

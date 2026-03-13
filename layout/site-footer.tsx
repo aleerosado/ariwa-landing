@@ -2,35 +2,35 @@ import Link from "next/link";
 
 const footerColumns = [
   {
-    title: "Company",
+    title: "Compañía",
     links: [
-      { label: "About", href: "#about" },
-      { label: "Industries", href: "#industries" },
-      { label: "Careers", href: "#0" },
+      { label: "Nosotros", href: "#about" },
+      { label: "Industrias", href: "#industries" },
+      { label: "Carreras", href: "#0" },
     ],
   },
   {
-    title: "Solutions",
+    title: "Soluciones",
     links: [
-      { label: "AI Solutions", href: "#solutions" },
-      { label: "Cloud & DevOps", href: "#technology" },
-      { label: "Consulting", href: "#solutions" },
+      { label: "Soluciones de IA", href: "#solutions" },
+      { label: "Cloud y DevOps", href: "#technology" },
+      { label: "Consultoría", href: "#solutions" },
     ],
   },
   {
-    title: "Resources",
+    title: "Recursos",
     links: [
-      { label: "Insights", href: "#insights" },
-      { label: "Use Cases", href: "#use-cases" },
-      { label: "Contact", href: "#contact" },
+      { label: "Perspectivas", href: "#insights" },
+      { label: "Casos de uso", href: "#use-cases" },
+      { label: "Contacto", href: "#contact" },
     ],
   },
   {
-    title: "Contact",
+    title: "Contacto",
     links: [
       { label: "contact@ariwalabs.com", href: "mailto:contact@ariwalabs.com" },
       { label: "partners@ariwalabs.com", href: "mailto:partners@ariwalabs.com" },
-      { label: "Lima, Peru", href: "#0" },
+      { label: "Lima, Perú", href: "#0" },
     ],
   },
 ];
@@ -60,8 +60,8 @@ export default function SiteFooter() {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-6 text-sm text-[#64748B] sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} Ariwa Labs. All rights reserved.</p>
-          <p>AI Engineering & Technology Consulting</p>
+          <p>© {new Date().getFullYear()} Ariwa Labs. Todos los derechos reservados.</p>
+          <p>Ingeniería de IA y Consultoría Tecnológica</p>
         </div>
       </div>
     </footer>

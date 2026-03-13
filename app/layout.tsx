@@ -43,9 +43,9 @@ const nacelle = localFont({
 });
 
 export const metadata = {
-  title: "Ariwa Labs | AI Engineering & Technology Consulting",
+  title: "Ariwa Labs | Ingeniería de IA y Consultoría Tecnológica",
   description:
-    "Ariwa Labs is a technology consulting startup focused on artificial intelligence, cloud architecture and software engineering.",
+    "Ariwa Labs es una startup de consultoría tecnológica enfocada en inteligencia artificial, arquitectura cloud e ingeniería de software.",
 };
 
 export default function RootLayout({
@@ -54,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${inter.variable} ${plusJakartaSans.variable} ${nacelle.variable} bg-[#0B0F19] font-plus-jakarta text-base text-[#F8FAFC] antialiased`}
       >

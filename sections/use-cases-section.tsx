@@ -6,28 +6,28 @@ import SectionShell from "@/components/section-shell";
 
 const useCases = [
   {
-    title: "AI assistants",
-    description: "Enterprise copilots for internal teams and citizen-facing services.",
+    title: "Asistentes de IA",
+    description: "Copilotos empresariales para equipos internos y servicios orientados al ciudadano.",
     icon: Bot,
   },
   {
-    title: "Process automation",
-    description: "Workflow orchestration that removes bottlenecks and reduces manual effort.",
+    title: "Automatización de procesos",
+    description: "Orquestación de flujos que elimina cuellos de botella y reduce trabajo manual.",
     icon: Workflow,
   },
   {
-    title: "Data platforms",
-    description: "Scalable data foundations that centralize, govern and activate data assets.",
+    title: "Plataformas de datos",
+    description: "Bases de datos escalables que centralizan, gobiernan y activan activos de información.",
     icon: CloudUpload,
   },
   {
-    title: "Intelligent analytics",
-    description: "Predictive and descriptive analytics for faster, better-informed decisions.",
+    title: "Analítica inteligente",
+    description: "Analítica predictiva y descriptiva para decisiones más rápidas y mejor informadas.",
     icon: ChartLine,
   },
   {
-    title: "Cloud modernization",
-    description: "Migration and platform engineering initiatives with measurable business outcomes.",
+    title: "Modernización cloud",
+    description: "Iniciativas de migración e ingeniería de plataforma con resultados medibles de negocio.",
     icon: Sparkles,
   },
 ];
@@ -36,9 +36,9 @@ export default function UseCasesSection() {
   return (
     <SectionShell id="use-cases">
       <SectionHeading
-        eyebrow="Use cases"
-        title="Applied innovation for real operational challenges"
-        description="These are examples of how we convert strategic priorities into scalable technology execution."
+        eyebrow="Casos de uso"
+        title="Innovación aplicada a desafíos operativos reales"
+        description="Estos son ejemplos de cómo convertimos prioridades estratégicas en ejecución tecnológica escalable."
       />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

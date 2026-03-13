@@ -12,9 +12,9 @@ import TechnologyStackSection from "@/sections/technology-stack-section";
 import UseCasesSection from "@/sections/use-cases-section";
 
 export const metadata: Metadata = {
-  title: "Ariwa Labs | AI Engineering & Technology Consulting",
+  title: "Ariwa Labs | Ingeniería de IA y Consultoría Tecnológica",
   description:
-    "Ariwa Labs is a technology consulting startup focused on artificial intelligence, cloud architecture and software engineering.",
+    "Ariwa Labs es una startup de consultoría tecnológica enfocada en inteligencia artificial, arquitectura cloud e ingeniería de software.",
 };
 
 export default function Home() {

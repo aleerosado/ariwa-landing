@@ -6,12 +6,12 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navigation = [
-  { label: "Solutions", href: "#solutions" },
-  { label: "Industries", href: "#industries" },
-  { label: "Technology", href: "#technology" },
-  { label: "Use Cases", href: "#use-cases" },
-  { label: "Insights", href: "#insights" },
-  { label: "Contact", href: "#contact" },
+  { label: "Soluciones", href: "#solutions" },
+  { label: "Industrias", href: "#industries" },
+  { label: "Tecnología", href: "#technology" },
+  { label: "Casos de uso", href: "#use-cases" },
+  { label: "Perspectivas", href: "#insights" },
+  { label: "Contacto", href: "#contact" },
 ];
 
 export default function StickyNavbar() {
@@ -20,7 +20,7 @@ export default function StickyNavbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0B0F19]/90 backdrop-blur-xl">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link href="#top" className="inline-flex items-center gap-2" aria-label="Ariwa Labs home">
+        <Link href="#top" className="inline-flex items-center gap-2" aria-label="Inicio de Ariwa Labs">
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-[#2563EB]/60 bg-[#2563EB]/20 text-sm font-semibold text-[#F8FAFC]">
             AL
           </span>
@@ -44,7 +44,7 @@ export default function StickyNavbar() {
             href="#contact"
             className="inline-flex items-center justify-center rounded-xl border border-[#2563EB] bg-[#2563EB] px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-500"
           >
-            Schedule a call
+            Agendar una llamada
           </Link>
         </div>
 
@@ -52,7 +52,7 @@ export default function StickyNavbar() {
           type="button"
           onClick={() => setMobileOpen((current) => !current)}
           className="inline-flex items-center justify-center rounded-lg border border-white/15 bg-white/5 p-2 text-[#F8FAFC] md:hidden"
-          aria-label="Open mobile menu"
+          aria-label="Abrir menú móvil"
           aria-expanded={mobileOpen}
         >
           {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -86,7 +86,7 @@ export default function StickyNavbar() {
                   onClick={() => setMobileOpen(false)}
                   className="mt-1 inline-flex w-full items-center justify-center rounded-lg border border-[#2563EB] bg-[#2563EB] px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-500"
                 >
-                  Schedule a call
+                  Agendar una llamada
                 </Link>
               </li>
             </ul>

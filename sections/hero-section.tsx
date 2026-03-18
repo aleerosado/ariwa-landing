@@ -2,6 +2,9 @@ import AnimatedReveal from "@/components/animated-reveal";
 import CtaButton from "@/components/cta-button";
 import SectionShell from "@/components/section-shell";
 import TechVisual from "@/components/tech-visual";
+import Image from "next/image";
+
+import heroImage from "@/public/images/hero-image-01.jpg";
 
 export default function HeroSection() {
   return (
@@ -31,9 +34,22 @@ export default function HeroSection() {
           </div>
         </AnimatedReveal>
 
-        <AnimatedReveal delay={0.15}>
-          <TechVisual />
-        </AnimatedReveal>
+        <div className="space-y-4">
+          <AnimatedReveal delay={0.15}>
+            <TechVisual />
+          </AnimatedReveal>
+          <AnimatedReveal delay={0.24}>
+            <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03]">
+              <Image
+                src={heroImage}
+                alt="Equipo de Ariwa Labs en sesión estratégica de tecnología"
+                className="h-52 w-full object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                priority
+              />
+            </div>
+          </AnimatedReveal>
+        </div>
       </div>
     </SectionShell>
   );

@@ -1,8 +1,11 @@
 import { ArrowUpRight, Bot, ChartLine, CloudUpload, Sparkles, Workflow } from "lucide-react";
+import Image from "next/image";
 
+import AnimatedReveal from "@/components/animated-reveal";
 import HoverCard from "@/components/hover-card";
 import SectionHeading from "@/components/section-heading";
 import SectionShell from "@/components/section-shell";
+import featuresImage from "@/public/images/features.png";
 
 const useCases = [
   {
@@ -40,6 +43,17 @@ export default function UseCasesSection() {
         title="Innovación aplicada a desafíos operativos reales"
         description="Estos son ejemplos de cómo convertimos prioridades estratégicas en ejecución tecnológica escalable."
       />
+
+      <AnimatedReveal className="mb-6">
+        <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03]">
+          <Image
+            src={featuresImage}
+            alt="Visualización de casos de uso de IA, cloud y analítica en Ariwa Labs"
+            className="h-52 w-full object-cover object-top"
+            sizes="(max-width: 1024px) 100vw, 80vw"
+          />
+        </div>
+      </AnimatedReveal>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {useCases.map((item, index) => {

@@ -14,9 +14,9 @@ function mergeClasses(...classes: Array<string | undefined>) {
 
 const variants = {
   primary:
-    "border border-[#2563EB] bg-[#2563EB] text-white shadow-[0_12px_32px_-18px_rgba(37,99,235,.95)] hover:-translate-y-0.5 hover:bg-blue-500",
+    "border border-[#E8513F] bg-[#E8513F] text-white shadow-[0_16px_34px_-20px_rgba(232,81,63,.85)] hover:-translate-y-0.5 hover:bg-[#D94433]",
   secondary:
-    "border border-white/25 bg-white/5 text-[#F8FAFC] hover:-translate-y-0.5 hover:border-[#22C55E]/70 hover:bg-[#22C55E]/10",
+    "border border-[#1B365D]/20 bg-white text-[#1B365D] hover:-translate-y-0.5 hover:border-[#E8513F]/70 hover:bg-[#FFF2EF]",
 };
 
 export default function CtaButton({
@@ -29,7 +29,7 @@ export default function CtaButton({
     <Link
       href={href}
       className={mergeClasses(
-        "inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold tracking-wide transition-all duration-300",
+        "inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold transition-all duration-300",
         variants[variant],
         className,
       )}

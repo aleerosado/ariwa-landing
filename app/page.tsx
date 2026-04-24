@@ -7,14 +7,15 @@ import HeroSection from "@/sections/hero-section";
 import IndustriesSection from "@/sections/industries-section";
 import InsightsSection from "@/sections/insights-section";
 import ProblemSection from "@/sections/problem-section";
+import ProductsSection from "@/sections/products-section";
 import SolutionsSection from "@/sections/solutions-section";
 import TechnologyStackSection from "@/sections/technology-stack-section";
 import UseCasesSection from "@/sections/use-cases-section";
 
 export const metadata: Metadata = {
-  title: "Ariwa Labs | Ingeniería de IA y Consultoría Tecnológica",
+  title: "Ariwa Labs | Tecnología peruana con mentalidad startup",
   description:
-    "Ariwa Labs es una startup de consultoría tecnológica enfocada en inteligencia artificial, arquitectura cloud e ingeniería de software.",
+    "Ariwa Labs crea productos tecnológicos, IA e ingeniería de software desde Perú con un equipo mayoritariamente femenino.",
 };
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
     <LandingLayout>
       <HeroSection />
       <ProblemSection />
+      <ProductsSection />
       <SolutionsSection />
       <IndustriesSection />
       <TechnologyStackSection />

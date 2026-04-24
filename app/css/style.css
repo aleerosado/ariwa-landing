@@ -11,12 +11,13 @@
 
 @theme {
   --font-inter: var(--font-inter), sans-serif;
-  --font-plus-jakarta: var(--font-plus-jakarta), sans-serif;
+  --font-sora: var(--font-sora), sans-serif;
   --font-nacelle: var(--font-nacelle), sans-serif;
 
-  --color-brand-primary: #2563eb;
-  --color-brand-accent: #22c55e;
-  --color-surface-alt: #0b0f19;
+  --color-brand-primary: var(--color-primary);
+  --color-brand-navy: var(--color-secondary);
+  --color-brand-muted: var(--text-secondary);
+  --color-brand-soft: var(--bg-light);
 
   --color-gray-50: #f8fafc;
   --color-gray-100: #f1f5f9;
@@ -51,31 +52,31 @@
   --text-sm--line-height: 1.5715;
   --text-base: 0.9375rem;
   --text-base--line-height: 1.5333;
-  --text-base--letter-spacing: -0.0125em;
+  --text-base--letter-spacing: 0;
   --text-lg: 1.125rem;
   --text-lg--line-height: 1.5;
-  --text-lg--letter-spacing: -0.0125em;
+  --text-lg--letter-spacing: 0;
   --text-xl: 1.25rem;
   --text-xl--line-height: 1.5;
-  --text-xl--letter-spacing: -0.0125em;
+  --text-xl--letter-spacing: 0;
   --text-2xl: 1.5rem;
   --text-2xl--line-height: 1.415;
-  --text-2xl--letter-spacing: -0.0268em;
+  --text-2xl--letter-spacing: 0;
   --text-3xl: 1.75rem;
   --text-3xl--line-height: 1.3571;
-  --text-3xl--letter-spacing: -0.0268em;
+  --text-3xl--letter-spacing: 0;
   --text-4xl: 2.5rem;
   --text-4xl--line-height: 1.1;
-  --text-4xl--letter-spacing: -0.0268em;
+  --text-4xl--letter-spacing: 0;
   --text-5xl: 3.5rem;
   --text-5xl--line-height: 1;
-  --text-5xl--letter-spacing: -0.0268em;
+  --text-5xl--letter-spacing: 0;
   --text-6xl: 4rem;
   --text-6xl--line-height: 1;
-  --text-6xl--letter-spacing: -0.0268em;
+  --text-6xl--letter-spacing: 0;
   --text-7xl: 4.5rem;
   --text-7xl--line-height: 1;
-  --text-7xl--letter-spacing: -0.0268em;
+  --text-7xl--letter-spacing: 0;
 
   --animate-shine: shine 5s ease-in-out 500ms infinite;
   --animate-gradient: gradient 6s linear infinite;
@@ -111,12 +112,12 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    background: #0b0f19;
+    background: var(--bg-white);
   }
 
   body {
-    background: #0b0f19;
-    color: #f8fafc;
+    background: var(--bg-white);
+    color: var(--text-primary);
   }
 
   *,
@@ -129,24 +130,12 @@
 }
 
 @layer utilities {
-  .font-plus-jakarta {
-    font-family: var(--font-plus-jakarta);
+  .font-inter {
+    font-family: var(--font-inter);
   }
 
-  .text-brand-primary {
-    color: var(--color-brand-primary);
-  }
-
-  .text-brand-accent {
-    color: var(--color-brand-accent);
-  }
-
-  .bg-brand-primary {
-    background-color: var(--color-brand-primary);
-  }
-
-  .bg-surface-alt {
-    background-color: var(--color-surface-alt);
+  .font-sora {
+    font-family: var(--font-sora);
   }
 
   .no-scrollbar {

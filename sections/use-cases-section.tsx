@@ -1,11 +1,9 @@
 import { ArrowUpRight, Bot, ChartLine, CloudUpload, Sparkles, Workflow } from "lucide-react";
-import Image from "next/image";
 
 import AnimatedReveal from "@/components/animated-reveal";
 import HoverCard from "@/components/hover-card";
 import SectionHeading from "@/components/section-heading";
 import SectionShell from "@/components/section-shell";
-import featuresImage from "@/public/images/features.png";
 
 const useCases = [
   {
@@ -40,17 +38,16 @@ export default function UseCasesSection() {
     <SectionShell id="use-cases">
       <SectionHeading
         eyebrow="Casos de uso"
-        title="Innovación aplicada a desafíos operativos reales"
-        description="Estos son ejemplos de cómo convertimos prioridades estratégicas en ejecución tecnológica escalable."
+        title="De la idea a operación con impacto medible"
+        description="Convertimos prioridades estratégicas en flujos, interfaces y plataformas que los equipos pueden usar todos los días."
       />
 
       <AnimatedReveal className="mb-6">
-        <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03]">
-          <Image
-            src={featuresImage}
-            alt="Visualización de casos de uso de IA, cloud y analítica en Ariwa Labs"
-            className="h-52 w-full object-cover object-top"
-            sizes="(max-width: 1024px) 100vw, 80vw"
+        <div className="overflow-hidden rounded-2xl border border-[#1B365D]/10 bg-white">
+          <img
+            src="/images/use-cases-vr.svg"
+            alt="Personas interactuando con interfaces digitales inmersivas para casos de uso de IA, cloud y analítica en Ariwa Labs"
+            className="h-52 w-full object-cover object-center"
           />
         </div>
       </AnimatedReveal>
@@ -63,14 +60,14 @@ export default function UseCasesSection() {
             <HoverCard
               key={item.title}
               delay={0.08 * index}
-              className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5"
+              className="group rounded-2xl border border-[#1B365D]/10 bg-white p-5"
             >
               <div className="flex items-center justify-between">
-                <Icon className="h-6 w-6 text-[#22C55E]" />
-                <ArrowUpRight className="h-4 w-4 text-[#94A3B8] transition-colors group-hover:text-[#F8FAFC]" />
+                <Icon className="h-6 w-6 text-[#E8513F]" />
+                <ArrowUpRight className="h-4 w-4 text-[#6B7C95] transition-colors group-hover:text-[#E8513F]" />
               </div>
-              <h3 className="mt-4 text-lg font-semibold text-[#F8FAFC]">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#94A3B8]">{item.description}</p>
+              <h3 className="mt-4 font-sora text-lg font-semibold text-[#1B365D]">{item.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-[#5A6C84]">{item.description}</p>
             </HoverCard>
           );
         })}

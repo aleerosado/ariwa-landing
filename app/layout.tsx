@@ -1,6 +1,6 @@
 import "./css/style.css";
 
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Sora } from "next/font/google";
 import localFont from "next/font/local";
 
 const inter = Inter({
@@ -9,9 +9,10 @@ const inter = Inter({
   display: "swap",
 });
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const sora = Sora({
   subsets: ["latin"],
-  variable: "--font-plus-jakarta",
+  variable: "--font-sora",
+  weight: ["300", "600", "700", "800"],
   display: "swap",
 });
 
@@ -43,9 +44,9 @@ const nacelle = localFont({
 });
 
 export const metadata = {
-  title: "Ariwa Labs | Ingeniería de IA y Consultoría Tecnológica",
+  title: "Ariwa Labs | Tecnología peruana con mentalidad startup",
   description:
-    "Ariwa Labs es una startup de consultoría tecnológica enfocada en inteligencia artificial, arquitectura cloud e ingeniería de software.",
+    "Ariwa Labs crea productos tecnológicos, IA e ingeniería de software desde Perú con un equipo mayoritariamente femenino.",
 };
 
 export default function RootLayout({
@@ -56,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${inter.variable} ${plusJakartaSans.variable} ${nacelle.variable} bg-[#0B0F19] font-plus-jakarta text-base text-[#F8FAFC] antialiased`}
+        className={`${inter.variable} ${sora.variable} ${nacelle.variable} bg-white font-inter text-base text-[#1B365D] antialiased`}
       >
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
           {children}

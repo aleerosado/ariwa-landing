@@ -4,10 +4,10 @@ import Image from "next/image";
 import HoverCard from "@/components/hover-card";
 import SectionHeading from "@/components/section-heading";
 import SectionShell from "@/components/section-shell";
-import insightImageOne from "@/public/images/testimonial-01.jpg";
-import insightImageTwo from "@/public/images/testimonial-02.jpg";
-import insightImageThree from "@/public/images/testimonial-03.jpg";
-import insightImageFour from "@/public/images/testimonial-04.jpg";
+import insightImageOne from "@/public/images/insight-ai-government.png";
+import insightImageTwo from "@/public/images/insight-digital-transformation.png";
+import insightImageThree from "@/public/images/insight-cloud-modernization.png";
+import insightImageFour from "@/public/images/insight-applied-ai.png";
 
 const insights = [
   {
@@ -52,11 +52,11 @@ export default function InsightsSection() {
             delay={0.08 * index}
             className="group rounded-2xl border border-[#1B365D]/10 bg-white p-6"
           >
-            <div className="mb-5 overflow-hidden rounded-xl border border-[#1B365D]/10">
+            <div className="mb-5 aspect-[4/3] overflow-hidden rounded-xl border border-[#1B365D]/10 bg-[#080015]">
               <Image
                 src={insight.image}
                 alt={insight.title}
-                className="media-pan h-36 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />
             </div>

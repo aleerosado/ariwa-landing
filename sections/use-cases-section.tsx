@@ -45,7 +45,7 @@ export default function UseCasesSection() {
       <AnimatedReveal className="mb-6">
         <div className="overflow-hidden rounded-2xl border border-[#1B365D]/10 bg-white">
           <img
-            src="/images/use-cases-vr.svg"
+            src="/images/use-cases-immersive-ai.png"
             alt="Personas interactuando con interfaces digitales inmersivas para casos de uso de IA, cloud y analítica en Ariwa Labs"
             className="h-52 w-full object-cover object-center"
           />

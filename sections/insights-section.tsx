@@ -52,11 +52,11 @@ export default function InsightsSection() {
             delay={0.08 * index}
             className="group rounded-2xl border border-[#1B365D]/10 bg-white p-6"
           >
-            <div className="mb-5 aspect-[4/3] overflow-hidden rounded-xl border border-[#1B365D]/10 bg-[#080015]">
+            <div className="mb-5 flex aspect-[4/3] items-center justify-center overflow-hidden rounded-xl border border-[#1B365D]/10 bg-[#080015] p-2">
               <Image
                 src={insight.image}
                 alt={insight.title}
-                className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+                className="h-full w-full object-contain"
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />
             </div>

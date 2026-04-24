@@ -43,11 +43,11 @@ export default function UseCasesSection() {
       />
 
       <AnimatedReveal className="mb-6">
-        <div className="overflow-hidden rounded-2xl border border-[#1B365D]/10 bg-white">
+        <div className="flex max-h-[420px] items-center justify-center overflow-hidden rounded-2xl border border-[#1B365D]/10 bg-[#080015] p-2 sm:max-h-[520px]">
           <img
             src="/images/use-cases-immersive-ai.png"
             alt="Personas interactuando con interfaces digitales inmersivas para casos de uso de IA, cloud y analítica en Ariwa Labs"
-            className="h-52 w-full object-cover object-center"
+            className="max-h-[404px] w-full object-contain sm:max-h-[504px]"
           />
         </div>
       </AnimatedReveal>
